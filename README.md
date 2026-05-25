@@ -53,17 +53,3 @@ tb_spi_uvm_top
 
 - AXI-Lite register write/read 결과와 GPIO pin 변화를 비교합니다.
 - SPI line transaction과 slave 결과를 scoreboard에서 확인합니다.
-
-## 실행 방법
-
-Synopsys VCS와 UVM 1.2 환경에서 실행하는 기준입니다.
-
-```bash
-make gpio
-make spi
-make all
-make summary
-make verdi-gpio
-make verdi-spi
-make clean
-```
