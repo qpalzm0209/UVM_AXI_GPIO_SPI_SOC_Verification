@@ -1,0 +1,9 @@
+../source/spi_master_v1_0.v
+../source/spi_master_v1_0_S00_AXI.v
+../source/spi_slave.sv
+../tb/axi_lite_if.sv
+../tb/gpio_pin_if.sv
+../tb/spi_line_if.sv
+../tb/spi_result_if.sv
+../tb/soc_uvm_pkg.sv
+../tb/tb_spi_uvm_top.sv

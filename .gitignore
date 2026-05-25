@@ -1,0 +1,11 @@
+sim/simv*
+sim/*.daidir/
+sim/csrc/
+sim/ucli.key
+sim/*.log
+sim/*.vdb/
+sim/novas.*
+sim/verdiLog/
+wave/*.fsdb
+*.key
+DVEfiles/
