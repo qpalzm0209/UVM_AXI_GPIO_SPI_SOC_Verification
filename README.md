@@ -2,6 +2,7 @@
 
 ## 프로젝트 개요
 
+**발표자료: https://drive.google.com/file/d/1Z_oX86YITDtkyCXpNJuF5DB1RtBm6dTk/view?usp=drive_link**  
 본 프로젝트는 AXI-Lite 기반 SPI/GPIO SoC 환경을 구현하고, UVM 기반 검증 환경으로 동작을 확인한 프로젝트입니다. 설계는 AXI-Lite register access가 GPIO 제어, SPI Master packet 전송, SPI Slave 수신, LED/FND Display 출력 갱신으로 이어지는 구조로 구성했습니다.
 
 구현 구조에서는 MicroBlaze C 코드가 memory-mapped register를 제어하도록 구성했으며, UVM 검증에서는 실제 MicroBlaze 실행을 포함하지 않고 AXI BFM으로 register read/write transaction을 생성해 CPU 접근을 대체했습니다. 이를 통해 CPU 실행 계층과 peripheral 검증 범위를 분리하고, register access 이후 GPIO 및 SPI 경로가 기대한 흐름대로 동작하는지 확인했습니다.
